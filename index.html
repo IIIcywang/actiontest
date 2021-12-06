@@ -38,9 +38,16 @@
         <div>Loading, please wait...</div>
     </div>
     <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+        AFRAME.registerComponent('log', { schema: {type: 'string'}, init: function () { var stringToLog = this.data; console.log(stringToLog); } });
+
+
         <!-- we use cors proxy to avoid cross-origin problems -->
         <!-- we use the trex image shown on the homepage of the docs -->
         <a-marker preset="hiro"> </a-marker>
         <a-entity camera></a-entity>
+
+
+
+
     </a-scene>
 </body>
