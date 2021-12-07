@@ -29,6 +29,9 @@
     sceneE1.addEventListener("MakerFound", function(event) {
         console.log("辨識物是=" + event)
     });
+    sceneE1.addEventListener("markerLos", (event) => {
+        console.log("標記遺失")
+    })
 </script>
 
 
@@ -46,7 +49,7 @@
         <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
 
         <a-marker preset='hiro'>
-            <a-box position='0 0.5 0' color="yellow"></a-box>
+            <a-box position='0 0.5 0' color="yellow" alpha='0.5'></a-box>
         </a-marker>
         <!-- <a-nft type="nft" url="<path-to-your-image-descriptors>" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5"> -->
         <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
