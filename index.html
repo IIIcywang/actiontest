@@ -24,7 +24,12 @@
     }
 </style>
 
-
+<script>
+    var sceneE1 = document.createElement('a-entity');
+    sceneE1.addEventListener("MakerFound", function(event) {
+        console.log("辨識物是=" + event)
+    });
+</script>
 
 
 
