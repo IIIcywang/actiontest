@@ -24,6 +24,15 @@
     }
 </style>
 
+<script>
+    var sceneE1 = document.querySelector('a-scene');
+    sceneE1.addEventListener('MakerFound', function(event) {
+        console.log("辨識物是=" + event)
+    });
+</script>
+
+
+
 <body style="margin : 0px; overflow: hidden;">
     <!-- minimal loader shown until image descriptors are loaded. Loading may take a while according to the device computational power -->
     <!-- <div class="arjs-loader">
