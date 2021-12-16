@@ -21,10 +21,12 @@
             </a-asset-item>
         </a-assets>
 
-        <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+        <!-- <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA"> -->
+        <a-nft type="nft" url="<path-to-your-image-descriptors>" smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
             <a-entity id="bowser-model" gltf-model="#bowser" position="0 0 0" scale="0.05 0.05 0.05" class="clickable" gesture-handler>
             </a-entity>
-        </a-marker>
+        </a-nft>
+        <!-- </a-marker> -->
 
         <a-marker preset="kanji" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
             <a-box position='0 0.5 0' color="yellow"></a-box>
